@@ -2,7 +2,6 @@
 
 namespace App\Http\Resources;
 
-use App\Models\DeskList;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class DeskResource extends JsonResource
