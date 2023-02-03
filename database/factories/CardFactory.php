@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\DeskList;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,8 @@ class CardFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => fake()->word,
+            'desk_list_id' => DeskList::query()->inRandomOrder()->value('id'),
         ];
     }
 }
